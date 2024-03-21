@@ -60,6 +60,10 @@
         
         cursor:default;
     }
+
+    #font_murasaki_config{
+      margin-bottom: 0px;
+    }
     
     .font_murasaki:hover { 
         transform: scale(1.05);
