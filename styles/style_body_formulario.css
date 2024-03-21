@@ -1,0 +1,917 @@
+/* Estilização do body e formulário */
+
+    @charset "UTF-8";
+    
+    @font-face{
+      font-family: 'Malstyoor';
+      src: url(../fontes/Malstyoor-ZVZ1J.ttf);
+    }
+
+    /* body */
+    .body{
+        margin: 0px 0px;
+    }
+
+    /* module */
+    .module{
+        position: relative;
+    }
+
+    /* module before */
+        .module::before{
+            content: "";
+
+            position: absolute;
+
+            top: -1px; left: 0; 
+
+            width: 100%; height: 138.5%;   
+
+            background-image: url(../Imagens/background\ temple2.png);
+
+            background-repeat: no-repeat;
+
+            background-size: cover;
+
+            filter: opacity(60%)  grayscale(100%);
+
+            z-index: 1; 
+            
+            margin-top: -24px;
+        }
+
+    /* module_inside */
+        .module_inside{
+            background-image: url(../Imagens/background\ form\ 1.jpg);
+
+            width: 600px;
+
+            height: fit-content;
+
+            padding: 0% 0% 0% 0%;  
+
+            border-radius: 20px;
+
+            margin: auto;
+
+            z-index: 10;
+
+            position: relative;
+
+            border-top: 50px;
+
+            box-shadow: #000000  1px 1px 1px 1px;
+        }
+
+
+    /* cadastro */
+    .register{
+        height: 30px;
+
+        width: 150px;
+
+        text-align: center;
+
+        border-top: 5px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        font-size: 150%;
+
+        background-color: #9e16c7c0;
+
+        border-radius: 20px 20px 20px 20px;
+    }
+
+
+    /* formulario */
+    .form{
+        text-align: center;
+
+        background-image: url(../Formulario/Imagens/);
+
+        font-family: cursive;
+    }
+
+    /* nome_formulario_nome */
+    .name_form_name{
+      
+
+        box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+        background-color: #de83f088;
+        
+        border-radius: 10px;
+
+        color: #000000;
+
+        margin-left: 170px;
+
+        margin-right: 350px;
+
+        font-size: 16px;
+      
+        text-decoration: none;
+      
+        text-transform: uppercase;
+      
+        overflow: hidden;
+    }
+
+    /* nome_formulario_telefone */
+    .telephone_form_name{
+        margin-left: 170px;
+
+        margin-right: 320px;
+        
+        box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+        background-color: #de83f088;
+
+        border-radius: 10px;
+
+        font-size: 16px;
+      
+        text-decoration: none;
+      
+        text-transform: uppercase;
+      
+        overflow: hidden;
+    }
+
+    /* nome_formulario_endereco */
+    .adress_form_name{
+        margin-left: 170px;
+                
+        margin-right: 320px;
+
+        box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+        background-color: #de83f088;
+
+        border-radius: 10px;
+
+        font-size: 16px;
+      
+        text-decoration: none;
+      
+        text-transform: uppercase;
+      
+        overflow: hidden;
+    }
+
+    /* nome_formulario_email */
+    .email_form_name{
+        margin-left: 170px;
+
+        margin-right: 350px;
+
+        box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+        background-color: #de83f088;
+
+        border-radius: 10px;       
+
+        font-size: 16px;
+      
+        text-decoration: none;
+      
+        text-transform: uppercase;
+      
+        overflow: hidden;
+    }
+
+    /* nome_formulario_senha */
+    .password_form_name{
+        margin-left: 170px;
+                
+        margin-right: 250px;
+
+        box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+        background-color: #de83f088;
+
+        border-radius: 10px;
+
+        font-size: 16px;
+      
+        text-decoration: none;
+      
+        text-transform: uppercase;
+      
+        overflow: hidden;
+    }
+
+    /* nome_formulario_csenha */
+    .confirm_password_form_name{
+        margin-left: 170px;
+                
+        margin-right: 250px;
+
+        box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+        background-color: #de83f088;
+
+        border-radius: 10px;      
+
+        font-size: 16px;
+      
+        text-decoration: none;
+      
+        text-transform: uppercase;
+      
+        overflow: hidden;
+    }
+
+    /* input_formulario */
+    .input_form{
+      margin-bottom: 20px;
+        margin-left: -10px;
+    }
+
+    /* telefone */
+    .telephone{
+        margin-left: -80px;
+        margin-bottom: 20px;
+    }
+
+    /* nome_formulario_nascimento */
+    .birth_form_name{
+        margin-left: 220px;
+
+      margin-bottom: 2px;
+
+        margin-right: 220px;
+
+        box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+        background-color: #de83f088;
+
+        border-radius: 10px;    
+
+        font-size: 12px;
+      
+        text-decoration: none;
+      
+        text-transform: uppercase;
+      
+        overflow: hidden;
+    }
+
+    #input_birth_from{
+      margin-bottom: 20px;
+    }
+
+    /* nome_formulario_regiao */
+    .region_form_name{
+        margin-left: 220px;
+
+        margin-right: 220px;
+
+        box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+        background-color: #de83f088;
+
+        border-radius: 10px;   
+
+        font-size: 12px;
+      
+        text-decoration: none;
+      
+        text-transform: uppercase;
+      
+        overflow: hidden;
+    }
+
+    /* nome_formulario_notificacao */
+    .notification_form_name{
+        margin-left: 80px;
+
+        margin-right: 80px;
+
+        box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+        background-color: #de83f088;
+
+        border-radius: 10px;  
+
+        font-size: 12px;
+      
+        text-decoration: none;
+      
+        text-transform: uppercase;
+      
+        overflow: hidden;
+    }
+
+    /* formulario_selectbox */
+    .selectbox_form{
+        margin-left: 240px;
+
+        margin-right: 240px;
+
+        background-color: #00000025;
+        
+        color: #b36caf;
+        
+        border-radius: 10px;
+
+        margin-top: 20px;
+
+        text-align:left;
+      
+        font-size: 12px;
+      
+        text-decoration: none;
+      
+        text-transform: uppercase;
+      
+        overflow: hidden;
+    }
+
+    #selectbox_nao{
+      margin-left: 20px;
+    }
+
+    /* formulario_checkbox */
+    .checkbox_name{
+        margin-left: 50px;
+
+        margin-right: 50px;
+
+        box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+        background-color: #de83f088;
+
+        border-radius: 10px;    
+
+        font-size: 12px;
+      
+        text-decoration: none;
+      
+        text-transform: uppercase;
+      
+        overflow: hidden;
+    }
+
+    .checkbox_form{
+        margin-left: 120px;
+
+        margin-right: 350px;
+
+        background-color: #00000025;
+        
+        border-radius: 10px;
+
+        color: #b36caf;
+
+        text-align:left;
+
+        margin-top: 5px;
+      
+        font-size: 12px;
+      
+        text-decoration: none;
+      
+        text-transform: uppercase;
+      
+        overflow: hidden;
+    }
+
+    /* neon_bt */
+        .neon-bt {
+          margin-bottom: 30px;
+
+            position: relative;
+          
+            display: inline-block;
+          
+            padding: 10px 20px;
+          
+            color: #00ff15;
+          
+            font-size: 16px;
+          
+            text-decoration: none;
+          
+            text-transform: uppercase;
+          
+            overflow: hidden;
+          
+            transition: 0.2s;
+          
+            margin-top: 40px;
+          
+            letter-spacing: 4px
+          
+          }
+          
+           
+          
+          .neon-bt:hover {
+          
+            background: #00ff15;
+          
+            color: #fff;
+          
+            border-radius: 5px;
+          
+            box-shadow: 0 0 5px #00ff15,
+          
+                        0 0 25px #00ff15,
+          
+                        0 0 50px #00ff15,
+          
+                        0 0 100px #00ff15;
+          
+          }
+          
+           
+          
+           
+          
+          /*animação do span para criar linhas*/
+          
+           
+          
+           
+          
+          .neon-bt span {
+          
+            position: absolute;
+          
+            display: block;
+          
+          }
+          
+           
+          
+           
+          
+          /*span 1*/
+          
+          .neon-bt span:nth-child(1) {
+          
+            top: 0;
+          
+            left: -100%;
+          
+            width: 100%;
+          
+            height: 2px;
+          
+            background: linear-gradient(90deg, transparent, #00ff15);
+          
+            animation: btn-anim1 1s linear infinite;
+          
+          }
+          
+           
+          
+          @keyframes btn-anim1 {
+          
+            0% {
+          
+              left: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              left: 100%;
+          
+            }
+          
+          }
+          
+           
+          
+          /*span 2*/
+          
+          .neon-bt span:nth-child(2) {
+          
+            top: -100%;
+          
+            right: 0;
+          
+            width: 2px;
+          
+            height: 100%;
+          
+            background: linear-gradient(180deg, transparent, #00ff15);
+          
+            animation: btn-anim2 1s linear infinite;
+          
+            animation-delay: .25s
+          
+          }
+          
+           
+          
+          @keyframes btn-anim2 {
+          
+            0% {
+          
+              top: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              top: 100%;
+          
+            }
+          
+          }
+          
+           
+          
+           
+          
+          /*span 3*/
+          
+           
+          
+          .neon-bt span:nth-child(3) {
+          
+            bottom: 0;
+          
+            right: -100%;
+          
+            width: 100%;
+          
+            height: 2px;
+          
+            background: linear-gradient(270deg, transparent, #00ff15);
+          
+            animation: btn-anim3 1s linear infinite;
+          
+            animation-delay: .5s
+          
+          }
+          
+           
+          
+          @keyframes btn-anim3 {
+          
+            0% {
+          
+              right: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              right: 100%;
+          
+            }
+          
+          }
+          
+           
+          
+          /*span 4*/
+          
+           
+          
+          .neon-bt span:nth-child(4) {
+          
+            bottom: -100%;
+          
+            left: 0;
+          
+            width: 2px;
+          
+            height: 100%;
+          
+            background: linear-gradient(360deg, transparent, #00ff15);
+          
+            animation: btn-anim4 1s linear infinite;
+          
+            animation-delay: .75s
+          
+          }
+          
+           
+          
+          @keyframes btn-anim4 {
+          
+            0% {
+          
+              bottom: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              bottom: 100%;
+          
+            }
+          
+          }
+    
+
+    /* neonL_bt */
+        .neonL-bt {
+          margin-bottom: 30px;
+
+            position: relative;
+          
+            display: inline-block;
+          
+            padding: 10px 20px;
+          
+            color: #ff0000;
+          
+            font-size: 16px;
+          
+            text-decoration: none;
+          
+            text-transform: uppercase;
+          
+            overflow: hidden;
+          
+            transition: 0.2s;
+          
+            margin-top: 40px;
+          
+            letter-spacing: 4px;
+          
+            margin-left: 10px;
+          }
+          
+           
+          
+          .neonL-bt:hover {
+          
+            background: #ff0000;
+          
+            color: #fff;
+          
+            border-radius: 5px;
+          
+            box-shadow: 0 0 5px #ff0000,
+          
+                        0 0 25px #ff0000,
+          
+                        0 0 50px #ff0000,
+          
+                        0 0 100px #ff0000;
+          
+          }
+          
+           
+          
+           
+          
+          /*animação do span para criar linhas*/
+          
+           
+          
+           
+          
+          .neonL-bt span {
+          
+            position: absolute;
+          
+            display: block;
+          
+          }
+          
+           
+          
+           
+          
+          /*span 1*/
+          
+          .neonL-bt span:nth-child(1) {
+          
+            top: 0;
+          
+            left: -100%;
+          
+            width: 100%;
+          
+            height: 2px;
+          
+            background: linear-gradient(90deg, transparent, #ff0000);
+          
+            animation: btn-anim1 1s linear infinite;
+          
+          }
+          
+           
+          
+          @keyframes btn-anim1 {
+          
+            0% {
+          
+              left: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              left: 100%;
+          
+            }
+          
+          }
+          
+           
+          
+          /*span 2*/
+          
+          .neonL-bt span:nth-child(2) {
+          
+            top: -100%;
+          
+            right: 0;
+          
+            width: 2px;
+          
+            height: 100%;
+          
+            background: linear-gradient(180deg, transparent, #ff0000);
+          
+            animation: btn-anim2 1s linear infinite;
+          
+            animation-delay: .25s
+          
+          }
+          
+           
+          
+          @keyframes btn-anim2 {
+          
+            0% {
+          
+              top: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              top: 100%;
+          
+            }
+          
+          }
+          
+           
+          
+           
+          
+          /*span 3*/
+          
+           
+          
+          .neonL-bt span:nth-child(3) {
+          
+            bottom: 0;
+          
+            right: -100%;
+          
+            width: 100%;
+          
+            height: 2px;
+          
+            background: linear-gradient(270deg, transparent, #ff0000);
+          
+            animation: btn-anim3 1s linear infinite;
+          
+            animation-delay: .5s
+          
+          }
+          
+           
+          
+          @keyframes btn-anim3 {
+          
+            0% {
+          
+              right: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              right: 100%;
+          
+            }
+          
+          }
+          
+           
+          
+          /*span 4*/
+          
+           
+          
+          .neonL-bt span:nth-child(4) {
+          
+            bottom: -100%;
+          
+            left: 0;
+          
+            width: 2px;
+          
+            height: 100%;
+          
+            background: linear-gradient(360deg, transparent, #ff0000);
+          
+            animation: btn-anim4 1s linear infinite;
+          
+            animation-delay: .75s
+          
+          }
+          
+           
+          
+          @keyframes btn-anim4 {
+          
+            0% {
+          
+              bottom: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              bottom: 100%;
+          
+            }
+          
+          }
+
+@media screen and (max-width: 1366px){
+
+  .module::before{
+    transform: scale(0.67);
+
+    content: "";
+
+    position: absolute;
+
+    top: -1px; left: 0; 
+
+    width: 100%; height: 138.5%;   
+
+    background-image: url(../Imagens/background\ temple2.png);
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    filter: opacity(60%)  grayscale(100%);
+
+    z-index: 1; 
+    
+    margin-top: -24px;
+}
+
+/* module_inside */
+.module_inside{
+    background-image: url(../Imagens/background\ form\ 1.jpg);
+
+    width: 600px;
+
+    height: fit-content;
+
+    padding: 0% 0% 0% 0%;  
+
+    border-radius: 20px;
+
+    margin: auto;
+
+    z-index: 10;
+
+    position: relative;
+
+    border-top: 50px;
+
+    box-shadow: #000000  1px 1px 1px 1px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

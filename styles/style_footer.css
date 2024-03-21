@@ -1,0 +1,40 @@
+/* Estilização do footer */
+
+    /* footer_background */
+    .footer_background{
+        width: 100%; height: 50%;
+
+        margin-top: 287px;
+
+        filter: grayscale(100%);
+
+        background-size: cover;
+    }
+
+    /* footer_img */
+    .footer_img{
+        width: 100%;
+    }  
+
+    /* footer_description */
+    .footer_description{
+        bottom: -675px;
+
+        margin: -5px 0px;
+
+        position: absolute;
+
+        right: 10px;
+
+        padding: 2px 3px;
+
+        background-color: #64128557;
+
+        filter: grayscale(40%);
+        
+        border-radius: 10px;
+    }
+
+
+
+

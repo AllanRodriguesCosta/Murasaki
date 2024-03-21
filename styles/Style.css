@@ -1,0 +1,1569 @@
+/* Estilização do formulário */
+
+/* Body */
+
+    /* Header */
+
+    @charset "UTF-8";
+
+    @font-face{
+      font-family: 'Malstyoor';
+      src: url(../Formulario/fontes/Malstyoor-ZVZ1J.ttf);
+    }
+
+    .FontMurasaki{
+      position:absolute;
+      margin-left: 600px;
+      margin-top: -85px;
+      float: left;
+      z-index: 50;
+      font-size: 150px;
+      font-family: 'Malstyoor';
+      color: #9031a3;
+      text-shadow: #000000 -5px -5px 5px;
+      cursor:default;
+    }
+
+    .FontMurasaki:hover { 
+      transform: scale(1.05);
+      transition: 0.5s all;
+  }
+
+  .FontMurasaki:not(:hover){
+      transform: scale(1.0);
+      transition: 0.5s all;
+  }
+
+  .Log_Sign_btn_config{
+    z-index: 9999999;
+    position: absolute;
+    right: 180px;
+    top: 30px;
+    color: #000000;
+  }
+
+  /* .Sign_btn{
+    margin-left: 20px;
+    background-color: #00000000;
+    border: none;
+    color:#641285 ;
+  } */
+
+  #Sign_btn_pst{
+    margin-left: 20px;
+  }
+
+  .Sign_btn {
+    top: -40px;
+
+    position: relative;
+  
+    display: inline-block;
+  
+    padding: 10px 20px;
+  
+    color: #00ff15;
+  
+    font-size: 20px;
+  
+    text-decoration: none;
+  
+    text-transform: uppercase;
+  
+    overflow: hidden;
+  
+    transition: 0.2s;
+  
+    margin-top: 40px;
+  
+    letter-spacing: 4px
+  
+
+  }
+  
+   
+  
+  .Sign_btn:hover {
+  
+    background: #641285;
+  
+    color: #fff;
+  
+    border-radius: 5px;
+  
+    box-shadow: 0 0 5px #641285,
+  
+                0 0 25px #641285,
+  
+                0 0 50px #641285,
+  
+                0 0 100px #641285;
+  
+  }
+  
+   
+  
+   
+  
+  /*animação do span para criar linhas*/
+  
+   
+  
+   
+  
+  .Sign_btn span {
+  
+    position: absolute;
+  
+    display: block;
+  
+  }
+  
+   
+  
+   
+  
+  /*span 1*/
+  
+  .Sign_btn span:nth-child(1) {
+  
+    top: 0;
+  
+    left: -100%;
+  
+    width: 100%;
+  
+    height: 2px;
+  
+    background: linear-gradient(90deg, transparent, #641285);
+  
+    animation: btn-anim1 1s linear infinite;
+  
+  }
+  
+   
+  
+  @keyframes btn-anim1 {
+  
+    0% {
+  
+      left: -100%;
+  
+    }
+  
+    50%,100% {
+  
+      left: 100%;
+  
+    }
+  
+  }
+  
+   
+  
+  /*span 2*/
+  
+  .Sign_btn span:nth-child(2) {
+  
+    top: -100%;
+  
+    right: 0;
+  
+    width: 2px;
+  
+    height: 100%;
+  
+    background: linear-gradient(180deg, transparent, #641285);
+  
+    animation: btn-anim2 1s linear infinite;
+  
+    animation-delay: .25s
+  
+  }
+  
+   
+  
+  @keyframes btn-anim2 {
+  
+    0% {
+  
+      top: -100%;
+  
+    }
+  
+    50%,100% {
+  
+      top: 100%;
+  
+    }
+  
+  }
+  
+   
+  
+   
+  
+  /*span 3*/
+  
+   
+  
+  .Sign_btn span:nth-child(3) {
+  
+    bottom: 0;
+  
+    right: -100%;
+  
+    width: 100%;
+  
+    height: 2px;
+  
+    background: linear-gradient(270deg, transparent, #641285);
+  
+    animation: btn-anim3 1s linear infinite;
+  
+    animation-delay: .5s
+  
+  }
+  
+   
+  
+  @keyframes btn-anim3 {
+  
+    0% {
+  
+      right: -100%;
+  
+    }
+  
+    50%,100% {
+  
+      right: 100%;
+  
+    }
+  
+  }
+  
+   
+  
+  /*span 4*/
+  
+   
+  
+  .Sign_btn span:nth-child(4) {
+  
+    bottom: -100%;
+  
+    left: 0;
+  
+    width: 2px;
+  
+    height: 100%;
+  
+    background: linear-gradient(360deg, transparent, #641285);
+  
+    animation: btn-anim4 1s linear infinite;
+  
+    animation-delay: .75s
+  
+  }
+  
+   
+  
+  @keyframes btn-anim4 {
+  
+    0% {
+  
+      bottom: -100%;
+  
+    }
+  
+    50%,100% {
+  
+      bottom: 100%;
+  
+    }
+  
+  }
+    
+    .Header{
+        z-index: 20;
+        position:relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+    }
+    
+    #Header1{
+        filter: opacity(60%) grayscale(100%);
+        width: 100%;
+    }
+
+    .iconHeader{
+        position: absolute;
+        width: 11%;
+        margin-left: 15px;
+        margin-top: 40px;
+        filter: none;
+        z-index: 30;
+        transform: rotate(0deg);
+        transform-origin: left top 0;
+        cursor: pointer;
+    }
+
+    .iconHeader:hover { 
+      transform: scale(1.05);
+      transition: 0.5s all;
+    }
+
+  .iconHeader:not(:hover){
+      transform: scale(1.0);
+      transition: 0.5s all;
+    }
+
+    .menu_nav{
+      height: 300px;
+      width: 160px;
+      position: absolute;
+      left: 63px;
+      top: 204px;
+      z-index: 9999;
+      background-color: #24242486;
+      color: white;
+      display: flex;
+      box-shadow: #641285c4 5px 5px 5px 5px;
+      border-radius: 10px 10px 10px 10px;
+      user-select: none;
+      list-style: none;
+      opacity: 0;
+      visibility: hidden;
+      
+    }
+
+    .menu_nav.ativo{
+      opacity: 1;
+      visibility: visible;
+    }
+
+  .menu{
+    margin-left: -40px;
+    
+    align-items: center;
+    list-style: none;
+  }
+  .menu_nav:hover { 
+    transition: 1s;
+    box-shadow: #00e21ec4 5px 5px 5px 5px;
+  }
+
+  .menu_nav:not(:hover){
+    box-shadow: #641285c4 5px 5px 5px 5px;
+    transition: 1s;
+  }
+
+    .menu_nav .menu{
+      user-select: none;
+
+    }
+
+    .menu_nav .menu ul{
+      top: 80px;
+      display: flex;
+      flex-direction: column;
+      background: wheat;
+      list-style: none;
+    }
+
+    .menu_li{
+      margin-bottom: -5px;
+      margin-left: 10px;
+    }
+
+    .menu_name{
+      margin-top: 0px;
+
+      margin-left: 1px;
+
+      position: relative;
+    
+      background-color: #641285b0;
+    
+      padding: 4px 60px;
+    
+      color: #ffffff;
+    
+      font-size: 12px;
+    
+      text-decoration: none;
+    
+      text-transform: uppercase;
+    
+      overflow: hidden;
+    
+      transition: 0.2s;
+      
+      border-radius: 10px;
+    
+      letter-spacing: 1px;
+          
+      display: inline-block;
+
+      margin-bottom: 15px;
+
+      cursor:default;
+    }
+
+
+
+
+
+    .menu_nav .menuToggle{
+      position: relative;
+      background-color: #641285;
+    }
+
+    /* Estilizações dos botões do menu*/
+
+  .btn_Home {
+
+      position: relative;
+    
+      background-color: #641285;
+    
+      padding: 2.5px 5px;
+    
+      color: #ffffff;
+    
+      font-size: 12px;
+    
+      text-decoration: none;
+    
+      text-transform: uppercase;
+    
+      overflow: hidden;
+    
+      transition: 0.2s;
+      
+      border-radius: 7px;
+    
+      letter-spacing: 1px;
+          
+      display: inline-block;
+  
+  }
+    
+  .btn_Home:hover {
+
+      border-radius: 10px;
+    
+      background: #00e21e;
+    
+      color: #ffffff;
+    
+      border-radius: 5px;
+    
+      box-shadow: 0 0 5px #641285,
+    
+                  0 0 25px #641285,
+    
+                  0 0 50px #641285,
+    
+                  0 0 100px #641285;
+    
+  }
+
+  .btn_Home not:not(:hover) {
+
+      border-radius: 10px;
+    
+      background: #641285;
+    
+      color: #fff;
+    
+      border-radius: 5px;
+    
+      box-shadow: 0 0 5px #641285,
+    
+                  0 0 25px #641285,
+    
+                  0 0 50px #641285,
+    
+                  0 0 100px #641285;
+    
+  }
+    
+     
+    
+     
+    
+    /*animação do span para criar linhas*/
+    
+     
+    
+     
+    
+  .btn_Home span {
+    
+      position: absolute;
+    
+      display: block;
+    
+  }
+    
+     
+    
+     
+    
+    /*span 1*/
+    
+  .btn_Home span:nth-child(1) {
+    
+      top: 0;
+    
+      left: -100%;
+    
+      width: 100%;
+    
+      height: 2px;
+    
+      background: linear-gradient(90deg, transparent, #641285);
+    
+      animation: btn-anim1 1s linear infinite;
+    
+  }
+
+   /*span 2*/
+  .btn_Home span:nth-child(2) {
+     top: -100%;
+   
+     right: 0;
+   
+     width: 2px;
+   
+     height: 100%;
+   
+     background: linear-gradient(180deg, transparent, #00ff15);
+   
+     animation: btn-anim2 1s linear infinite;
+   
+     animation-delay: .25s
+   
+  }
+   
+    
+   
+  @keyframes btn-anim2 {
+   
+     0% {
+   
+       top: -100%;
+   
+     }
+   
+     50%,100% {
+   
+       top: 100%;
+   
+     }
+   
+  }
+   
+    
+   
+    
+   
+   /*span 3*/
+   
+    
+   
+  .btn_Home span:nth-child(3) {
+   
+     bottom: 0;
+   
+     right: -100%;
+   
+     width: 100%;
+   
+     height: 2px;
+   
+     background: linear-gradient(270deg, transparent, #00ff15);
+   
+     animation: btn-anim3 1s linear infinite;
+   
+     animation-delay: .5s
+   
+  }
+   
+    
+   
+  @keyframes btn-anim3 {
+   
+     0% {
+   
+       right: -100%;
+   
+     }
+   
+     50%,100% {
+   
+       right: 100%;
+   
+     }
+   
+  }
+   
+               
+              
+   /*span 4*/
+   
+    
+   
+  .btn_Home span:nth-child(4) {
+   
+     bottom: -100%;
+   
+     left: 0;
+   
+     width: 2px;
+   
+     height: 100%;
+   
+     background: linear-gradient(360deg, transparent, #00ff15);
+   
+     animation: btn-anim4 1s linear infinite;
+   
+     animation-delay: .75s
+   
+  }
+   
+    
+   
+  @keyframes btn-anim4 {
+   
+     0% {
+   
+       bottom: -100%;
+   
+     }
+   
+     50%,100% {
+   
+       bottom: 100%;
+   
+     }
+   
+  }
+
+    .fontHeader:hover { 
+      transform: scale(1.05);
+      transition: 1s all;
+    }
+
+  .fontHeader:not(:hover){
+      transform: scale(1.0);
+      transition: 1s all;
+  }
+
+  .body{
+    margin: 0px 0px;
+  }
+
+    #NomeCadastro{
+        color: #eeff00;
+    }
+
+    .Cadastro{
+        
+        height: 30px;
+        width: 150px;
+        text-align: center;
+        border-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 150%;
+        background-color: #9e16c7c0;
+        border-radius: 20px 20px 20px 20px;
+    }
+
+/* Main */
+
+    .Formulario{
+        text-align: center;
+        background-image: url(../Formulario/Imagens/);
+        font-family: cursive;
+    }
+
+    /* input */
+
+        /* Nome das caixas de input */
+   
+            .CorNomeItens{
+                background-color: #00000025;
+
+                
+                
+                border-radius: 10px;
+
+                color: #ff0000; 
+          
+                font-size: 12px;
+              
+                text-decoration: none;
+              
+                text-transform: uppercase;
+              
+                overflow: hidden;
+            }
+
+            .NomeFormularioNome{
+                box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+                background-color: #de83f088;
+                
+                border-radius: 10px;
+
+                color: #000000;
+
+                margin-left: 170px;
+
+                margin-right: 350px;
+
+                font-size: 16px;
+              
+                text-decoration: none;
+              
+                text-transform: uppercase;
+              
+                overflow: hidden;
+            }
+            .NomeFormularioTelefone{
+                margin-left: 170px;
+
+                margin-right: 320px;
+                
+                box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+                background-color: #de83f088;
+
+                border-radius: 10px;
+
+                font-size: 16px;
+              
+                text-decoration: none;
+              
+                text-transform: uppercase;
+              
+                overflow: hidden;
+            }
+            .NomeFormularioEndereço{
+                margin-left: 170px;
+                
+                margin-right: 320px;
+
+                box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+                background-color: #de83f088;
+
+                border-radius: 10px;
+
+                font-size: 16px;
+              
+                text-decoration: none;
+              
+                text-transform: uppercase;
+              
+                overflow: hidden;
+            }
+            .NomeFormularioEmail{
+                margin-left: 170px;
+
+                margin-right: 350px;
+
+                box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+                background-color: #de83f088;
+
+                border-radius: 10px;       
+
+                font-size: 16px;
+              
+                text-decoration: none;
+              
+                text-transform: uppercase;
+              
+                overflow: hidden;
+            }
+            .NomeFormularioSenha{
+                margin-left: 170px;
+                
+                margin-right: 250px;
+
+                box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+                background-color: #de83f088;
+
+                border-radius: 10px;
+
+                font-size: 16px;
+              
+                text-decoration: none;
+              
+                text-transform: uppercase;
+              
+                overflow: hidden;
+            }
+            .NomeFormularioCSenha{
+                margin-left: 170px;
+                
+                margin-right: 250px;
+
+                box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+                background-color: #de83f088;
+
+                border-radius: 10px;      
+
+                font-size: 16px;
+              
+                text-decoration: none;
+              
+                text-transform: uppercase;
+              
+                overflow: hidden;
+            }
+        
+/* Posição e estilização das caixas de input */
+            
+            .NomeFormularioNascimento{
+                margin-left: 220px;
+
+                margin-right: 220px;
+
+                box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+                background-color: #de83f088;
+
+                border-radius: 10px;    
+
+                font-size: 12px;
+              
+                text-decoration: none;
+              
+                text-transform: uppercase;
+              
+                overflow: hidden;
+            }
+
+            .InputFormulario{
+                margin-left: -10px;
+            }
+
+            #Telefone{
+                margin-left: -80px;
+            }
+    
+    /* Selection box */
+
+        .NomeFormularioRegiao{
+            margin-left: 220px;
+
+            margin-right: 220px;
+
+            box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+            background-color: #de83f088;
+
+            border-radius: 10px;   
+
+            font-size: 12px;
+          
+            text-decoration: none;
+          
+            text-transform: uppercase;
+          
+            overflow: hidden;
+        }
+
+        .NomeFormularioNoti{
+            margin-left: 100px;
+
+            margin-right: 100px;
+
+            box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+            background-color: #de83f088;
+
+            border-radius: 10px;  
+
+            font-size: 12px;
+          
+            text-decoration: none;
+          
+            text-transform: uppercase;
+          
+            overflow: hidden;
+        }
+
+        .FormularioSelectBox{
+            margin-left: 120px;
+
+            margin-right: 400px;
+
+            background-color: #00000025;
+            
+            color: #b36caf;
+            
+            border-radius: 10px;
+
+            margin-top: 5px;
+
+            text-align:left;
+          
+            font-size: 12px;
+          
+            text-decoration: none;
+          
+            text-transform: uppercase;
+          
+            overflow: hidden;
+        }
+
+    /* Formulário CheckBox */
+
+        .NomeFormularioCheck{
+            margin-left: 100px;
+
+            margin-right: 100px;
+
+            box-shadow: 0 0 15px #de83f0, inset 0 0 15px #de83f0;
+
+            background-color: #de83f088;
+
+            border-radius: 10px;    
+
+            font-size: 12px;
+          
+            text-decoration: none;
+          
+            text-transform: uppercase;
+          
+            overflow: hidden;
+        }
+
+        .FormularioCheckBox{
+            margin-left: 120px;
+
+            margin-right: 350px;
+
+            background-color: #00000025;
+            
+            border-radius: 10px;
+
+            color: #b36caf;
+
+            text-align:left;
+
+            margin-top: 5px;
+          
+            font-size: 12px;
+          
+            text-decoration: none;
+          
+            text-transform: uppercase;
+          
+            overflow: hidden;
+        }
+        
+    
+    /* Botões */
+
+        /* Botão de enviar */
+
+            .Enviar {
+                margin-top: 50px;
+                margin-left: 0px;
+                width: 70px;
+                height: 40px;
+                border: none;
+                border-radius: 0;
+                background-color:rgb(158, 22, 199);
+                font-family: inherit;
+                color: #fff;
+                font-size: 20px;
+                cursor: pointer;
+                box-shadow: 10px 10px 10px #000000;
+                margin-bottom: 10px;
+                border-radius: 10px;
+            }
+
+            .Enviar:hover {
+                background: #02d437  
+                center center;
+                color:#ffffff;
+                transform: scale(1.05);
+                transition: 1s all;
+            }
+
+            .Enviar:not(:hover){
+                box-shadow: 5px 5px 5px #000000;
+                transform: scale(1.0);
+                transition: 1s all;
+            }
+
+        /* Estilização Neon */
+            
+        .neon-bt {
+
+            position: relative;
+          
+            display: inline-block;
+          
+            padding: 10px 20px;
+          
+            color: #00ff15;
+          
+            font-size: 16px;
+          
+            text-decoration: none;
+          
+            text-transform: uppercase;
+          
+            overflow: hidden;
+          
+            transition: 0.2s;
+          
+            margin-top: 40px;
+          
+            letter-spacing: 4px
+          
+          }
+          
+           
+          
+          .neon-bt:hover {
+          
+            background: #00ff15;
+          
+            color: #fff;
+          
+            border-radius: 5px;
+          
+            box-shadow: 0 0 5px #00ff15,
+          
+                        0 0 25px #00ff15,
+          
+                        0 0 50px #00ff15,
+          
+                        0 0 100px #00ff15;
+          
+          }
+          
+           
+          
+           
+          
+          /*animação do span para criar linhas*/
+          
+           
+          
+           
+          
+          .neon-bt span {
+          
+            position: absolute;
+          
+            display: block;
+          
+          }
+          
+           
+          
+           
+          
+          /*span 1*/
+          
+          .neon-bt span:nth-child(1) {
+          
+            top: 0;
+          
+            left: -100%;
+          
+            width: 100%;
+          
+            height: 2px;
+          
+            background: linear-gradient(90deg, transparent, #00ff15);
+          
+            animation: btn-anim1 1s linear infinite;
+          
+          }
+          
+           
+          
+          @keyframes btn-anim1 {
+          
+            0% {
+          
+              left: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              left: 100%;
+          
+            }
+          
+          }
+          
+           
+          
+          /*span 2*/
+          
+          .neon-bt span:nth-child(2) {
+          
+            top: -100%;
+          
+            right: 0;
+          
+            width: 2px;
+          
+            height: 100%;
+          
+            background: linear-gradient(180deg, transparent, #00ff15);
+          
+            animation: btn-anim2 1s linear infinite;
+          
+            animation-delay: .25s
+          
+          }
+          
+           
+          
+          @keyframes btn-anim2 {
+          
+            0% {
+          
+              top: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              top: 100%;
+          
+            }
+          
+          }
+          
+           
+          
+           
+          
+          /*span 3*/
+          
+           
+          
+          .neon-bt span:nth-child(3) {
+          
+            bottom: 0;
+          
+            right: -100%;
+          
+            width: 100%;
+          
+            height: 2px;
+          
+            background: linear-gradient(270deg, transparent, #00ff15);
+          
+            animation: btn-anim3 1s linear infinite;
+          
+            animation-delay: .5s
+          
+          }
+          
+           
+          
+          @keyframes btn-anim3 {
+          
+            0% {
+          
+              right: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              right: 100%;
+          
+            }
+          
+          }
+          
+           
+          
+          /*span 4*/
+          
+           
+          
+          .neon-bt span:nth-child(4) {
+          
+            bottom: -100%;
+          
+            left: 0;
+          
+            width: 2px;
+          
+            height: 100%;
+          
+            background: linear-gradient(360deg, transparent, #00ff15);
+          
+            animation: btn-anim4 1s linear infinite;
+          
+            animation-delay: .75s
+          
+          }
+          
+           
+          
+          @keyframes btn-anim4 {
+          
+            0% {
+          
+              bottom: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              bottom: 100%;
+          
+            }
+          
+          }
+
+        /* Botão de limpar */
+    
+            .Limpar{
+                margin-left: 20px;
+                width: 70px;
+                height: 40px;
+                border: none;
+                border-radius: 0;
+                background-color:rgb(158, 22, 199);
+                font-family: inherit;
+                color: #fff;
+                font-size: 20px;
+                cursor: pointer;
+                box-shadow: 10px 10px 10px #000000;
+                margin-bottom: 120px;
+                border-radius: 10px;
+            }
+
+            .Limpar:hover {
+                background: #ff0000  
+                center center;
+                color:#ffffff;
+                transform: scale(1.05);
+                transition: 1s all;
+            }
+
+            .Limpar:not(:hover){
+                box-shadow: 5px 5px 5px #000000;
+                transform: scale(1.0);
+                transition: 1s all;
+            }
+        
+        /* Estilização Neon */
+
+        .neonL-bt {
+
+            position: relative;
+          
+            display: inline-block;
+          
+            padding: 10px 20px;
+          
+            color: #ff0000;
+          
+            font-size: 16px;
+          
+            text-decoration: none;
+          
+            text-transform: uppercase;
+          
+            overflow: hidden;
+          
+            transition: 0.2s;
+          
+            margin-top: 40px;
+          
+            letter-spacing: 4px;
+          
+            margin-left: 10px;
+          }
+          
+           
+          
+          .neonL-bt:hover {
+          
+            background: #ff0000;
+          
+            color: #fff;
+          
+            border-radius: 5px;
+          
+            box-shadow: 0 0 5px #ff0000,
+          
+                        0 0 25px #ff0000,
+          
+                        0 0 50px #ff0000,
+          
+                        0 0 100px #ff0000;
+          
+          }
+          
+           
+          
+           
+          
+          /*animação do span para criar linhas*/
+          
+           
+          
+           
+          
+          .neonL-bt span {
+          
+            position: absolute;
+          
+            display: block;
+          
+          }
+          
+           
+          
+           
+          
+          /*span 1*/
+          
+          .neonL-bt span:nth-child(1) {
+          
+            top: 0;
+          
+            left: -100%;
+          
+            width: 100%;
+          
+            height: 2px;
+          
+            background: linear-gradient(90deg, transparent, #ff0000);
+          
+            animation: btn-anim1 1s linear infinite;
+          
+          }
+          
+           
+          
+          @keyframes btn-anim1 {
+          
+            0% {
+          
+              left: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              left: 100%;
+          
+            }
+          
+          }
+          
+           
+          
+          /*span 2*/
+          
+          .neonL-bt span:nth-child(2) {
+          
+            top: -100%;
+          
+            right: 0;
+          
+            width: 2px;
+          
+            height: 100%;
+          
+            background: linear-gradient(180deg, transparent, #ff0000);
+          
+            animation: btn-anim2 1s linear infinite;
+          
+            animation-delay: .25s
+          
+          }
+          
+           
+          
+          @keyframes btn-anim2 {
+          
+            0% {
+          
+              top: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              top: 100%;
+          
+            }
+          
+          }
+          
+           
+          
+           
+          
+          /*span 3*/
+          
+           
+          
+          .neonL-bt span:nth-child(3) {
+          
+            bottom: 0;
+          
+            right: -100%;
+          
+            width: 100%;
+          
+            height: 2px;
+          
+            background: linear-gradient(270deg, transparent, #ff0000);
+          
+            animation: btn-anim3 1s linear infinite;
+          
+            animation-delay: .5s
+          
+          }
+          
+           
+          
+          @keyframes btn-anim3 {
+          
+            0% {
+          
+              right: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              right: 100%;
+          
+            }
+          
+          }
+          
+           
+          
+          /*span 4*/
+          
+           
+          
+          .neonL-bt span:nth-child(4) {
+          
+            bottom: -100%;
+          
+            left: 0;
+          
+            width: 2px;
+          
+            height: 100%;
+          
+            background: linear-gradient(360deg, transparent, #ff0000);
+          
+            animation: btn-anim4 1s linear infinite;
+          
+            animation-delay: .75s
+          
+          }
+          
+           
+          
+          @keyframes btn-anim4 {
+          
+            0% {
+          
+              bottom: -100%;
+          
+            }
+          
+            50%,100% {
+          
+              bottom: 100%;
+          
+            }
+          
+          }
+
+
+/* Módulo para configurar sobreposição de Layer */
+
+    .module{
+        position: relative;
+        }
+        .module::before  {
+            content: "";
+            position: absolute;
+            top: -1px; left: 0; 
+            width: 100%; height: 137%;   
+            background-image: url(../Formulario/Imagens/background\ temple2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: opacity(60%)  grayscale(100%);
+            z-index: 1; 
+            margin-top: -24px;
+
+        }
+        .module-inside{
+            background-image: url(../Formulario/Imagens/background\ form\ 1.jpg);
+            width: 600px;
+            height: fit-content;
+            padding: 0% 0% 0% 0%;   
+            border-radius: 20px;
+            margin: auto;
+            z-index: 10;
+            position: relative;
+            border-top: 50px;
+            box-shadow: #000000  1px 1px 1px 1px;
+        }
+
+
+.footer_img{
+  width: 100%;
+}
+
+#FooterBackground{
+  width: 100%; height: 40%;
+  margin-top: 280px;
+  filter: grayscale(100%);
+  background-size: cover;
+}
+
+#footer_description{
+  bottom: -690px;
+  margin: 0px 0px;
+  position: absolute;
+  right: 30px;
+  padding: 2px 3px;
+  background-color: #64128557;
+  filter: grayscale(40%);
+  border-radius: 10px;
+}
+
+ 
+
+
+
+
+
